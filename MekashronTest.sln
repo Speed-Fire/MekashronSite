@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MekashronTest.Services", "MekashronTest.Services\MekashronTest.Services.csproj", "{498358CD-830F-4DB3-A636-11D8D2E0CD13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MekashronTest.Domain", "MekashronTest.Domain\MekashronTest.Domain.csproj", "{404EEA20-2430-4F17-B317-1A4D3E3E4AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MekashronUmbra", "MekashronUmbra\MekashronUmbra.csproj", "{A6AC1D7F-604D-4464-A605-254F8D9A713D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{498358CD-830F-4DB3-A636-11D8D2E0CD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498358CD-830F-4DB3-A636-11D8D2E0CD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498358CD-830F-4DB3-A636-11D8D2E0CD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498358CD-830F-4DB3-A636-11D8D2E0CD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404EEA20-2430-4F17-B317-1A4D3E3E4AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404EEA20-2430-4F17-B317-1A4D3E3E4AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404EEA20-2430-4F17-B317-1A4D3E3E4AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404EEA20-2430-4F17-B317-1A4D3E3E4AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6AC1D7F-604D-4464-A605-254F8D9A713D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AC1D7F-604D-4464-A605-254F8D9A713D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AC1D7F-604D-4464-A605-254F8D9A713D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AC1D7F-604D-4464-A605-254F8D9A713D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B15563AD-3684-41F2-84D8-31BA3C0D55D3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.LoginPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = null;
+}
+
+<div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="p-5 text-center card-body">
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="loginInput">Username</label>
+                        <input class="form-control" id="loginInput" type="text" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="passwordInput">Password</label>
+                        <input class="form-control" id="passwordInput" type="password" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block mb-4 align-content-center">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

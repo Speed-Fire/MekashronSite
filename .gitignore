@@ -361,3 +361,27 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+##
+## Umbraco CMS
+##
+
+# JSON schema file for appsettings.json
+appsettings-schema.json
+
+# Packages created from the backoffice (package.xml/package.zip)
+MekashronUmbra/umbraco/Data/CreatedPackages/
+
+# Temp folder containing Examine indexes, NuCache, MediaCache, etc.
+MekashronUmbra/umbraco/Data/TEMP/
+
+# SQLite database files
+MekashronUmbra/umbraco/Data/*.sqlite.db
+MekashronUmbra/umbraco/Data/*.sqlite.db-shm
+MekashronUmbra/umbraco/Data/*.sqlite.db-wal
+
+# Log files
+MekashronUmbra/umbraco/Logs/
+
+# Media files
+MekashronUmbra/wwwroot/media/

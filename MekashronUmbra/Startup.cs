@@ -1,3 +1,5 @@
+using MekashronTest.Services.Extensions;
+
 namespace MekashronUmbra
 {
     public class Startup
@@ -29,7 +31,9 @@ namespace MekashronUmbra
         /// </remarks>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddUmbraco(_env, _config)
+            services
+                .RegisterLogin()
+                .AddUmbraco(_env, _config)
                 .AddBackOffice()
                 .AddWebsite()
                 .AddComposers()

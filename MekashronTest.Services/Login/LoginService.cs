@@ -9,7 +9,7 @@ namespace MekashronTest.Services.Login
 {
     public class LoginService : ILoginService
     {
-        public async Task<IBaseResponse<bool>> Login(string username, string password, string ip)
+        public async Task<IBaseResponse<string>> Login(string username, string password, string ip)
         {
             var client = new AuthenticationService.ICUTechClient();
 
@@ -19,7 +19,29 @@ namespace MekashronTest.Services.Login
 
             await client.CloseAsync();
 
-            throw new NotImplementedException();
+            return new BaseResponse<string>
+            {
+                StatusCode = Domain.Enums.StatusCode.OK,
+                Data = response.@return,
+            };
+        }
+
+        public async Task<IBaseResponse<string>> Register(string ip)
+        {
+            var client = new AuthenticationService.ICUTechClient();
+
+            await client.OpenAsync();
+
+            var response = await client
+                .RegisterNewCustomerAsync("super_puper_mega_duper_test@test.com", "123456789", "Bob", "Dick", "+373778459852", 373, 2, ip);
+
+            await client.CloseAsync();
+
+            return new BaseResponse<string>
+            {
+                StatusCode = Domain.Enums.StatusCode.OK,
+                Data = response.@return,
+            };
         }
     }
 }

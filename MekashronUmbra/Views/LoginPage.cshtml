@@ -6,24 +6,27 @@
 }
 
 <div class="container h-100 py-5">
-    <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100 login-form">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
                 <div class="p-5 text-center card-body">
+                    <form id="loginForm">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="loginInput">Username</label>
+                            <input name="Username" class="form-control" id="loginInput" type="text" />
+                        </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="loginInput">Username</label>
-                        <input class="form-control" id="loginInput" type="text" />
-                    </div>
-
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="passwordInput">Password</label>
-                        <input class="form-control" id="passwordInput" type="password" />
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block mb-4 align-content-center">Login</button>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="passwordInput">Password</label>
+                            <input name="Password" class="form-control" id="passwordInput" type="password" />
+                        </div>
+                    </form>
+                    <button type="submit" id="loginButton" class="btn btn-primary btn-block mb-4 align-content-center">Login</button>
+                   @* <button type="submit" id="registerButton" class="btn btn-primary btn-block mb-4 align-content-center">Register</button>*@
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script src="~/views/LoginPage.cshtml.js"></script>

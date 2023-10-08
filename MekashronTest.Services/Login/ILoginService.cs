@@ -9,6 +9,7 @@ namespace MekashronTest.Services.Login
 {
     public interface ILoginService
     {
-        Task<IBaseResponse<bool>> Login(string username, string password, string ip);
+        Task<IBaseResponse<string>> Login(string username, string password, string ip);
+        Task<IBaseResponse<string>> Register(string ip);
     }
 }

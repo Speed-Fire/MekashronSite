@@ -5,6 +5,15 @@
 	Layout = "Master.cshtml";
 }
 
+@section meta
+    {
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kameshon" />
+    <meta property="og:title" content="About" />
+    <meta property="og:url" content="my.rric.org:8011/about" />
+    <meta name="Description" content="About page." />
+}
+
 <main class="mb-4">
 	<div class="container px-4 px-lg-5">
 		@Model.BodyText

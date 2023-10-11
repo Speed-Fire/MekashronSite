@@ -9,9 +9,11 @@
 <head>
     @await Html.PartialAsync("~/Views/Partials/_MetaData.cshtml")
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MekashronTest.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("meta", required: false)
+
+    <cache expires-after="@TimeSpan.FromMinutes(5)">
+        @await Html.PartialAsync("~/Views/Partials/_Links.cshtml")
+    </cache>
 </head>
 
 <body>

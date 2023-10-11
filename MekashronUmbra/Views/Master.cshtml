@@ -18,7 +18,9 @@
 
 <body>
     <header>
+        <cache expires-after="@TimeSpan.FromMinutes(5)">
         @await Html.PartialAsync("~/Views/Partials/_Navigation.cshtml")
+        </cache>
     </header>
 
     <div class="container">
@@ -26,7 +28,9 @@
     </div>
 
     <footer>
+        <cache expires-after="@TimeSpan.FromMinutes(5)">
         @await Html.PartialAsync("~/Views/Partials/_Footer.cshtml")
+        </cache>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

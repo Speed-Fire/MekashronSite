@@ -19,7 +19,7 @@
 <body>
     <header>
         <cache expires-after="@TimeSpan.FromMinutes(5)">
-        @await Html.PartialAsync("~/Views/Partials/_Navigation.cshtml")
+            @await Html.PartialAsync("~/Views/Partials/_Navigation.cshtml")
         </cache>
     </header>
 
@@ -29,14 +29,13 @@
 
     <footer>
         <cache expires-after="@TimeSpan.FromMinutes(5)">
-        @await Html.PartialAsync("~/Views/Partials/_Footer.cshtml")
+            @await Html.PartialAsync("~/Views/Partials/_Footer.cshtml")
         </cache>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

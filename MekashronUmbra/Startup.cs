@@ -52,7 +52,9 @@ namespace MekashronUmbra
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseUmbraco()
+            app
+                .UseResponseCaching()
+                .UseUmbraco()
                 .WithMiddleware(u =>
                 {
                     u.UseBackOffice();

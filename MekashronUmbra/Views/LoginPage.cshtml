@@ -5,6 +5,22 @@
 	Layout = "Master.cshtml";
 }
 
+@section meta
+    {
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kameshon" />
+    <meta property="og:title" content="Login" />
+    <meta property="og:url" content="my.rric.org:8011/login" />
+    <meta name="Description" content="Login page." />
+}
+
+@section Scripts{
+    <cache expires-after="@TimeSpan.FromSeconds(20)">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="~/scripts/LoginPage.js"></script>
+    </cache>
+}
+
 <div class="container h-100 py-5">
     <div class="row d-flex justify-content-center align-items-center h-100 login-form">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -28,5 +44,3 @@
         </div>
     </div>
 </div>
-
-<script src="~/views/LoginPage.cshtml.js"></script>

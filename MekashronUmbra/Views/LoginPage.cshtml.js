@@ -1,5 +1,5 @@
 ﻿var loginButton = document.getElementById('loginButton');
-var registerButton = document.getElementById('registerButton');
+/*var registerButton = document.getElementById('registerButton');*/
 
 loginButton.onclick = function () {
     var credentials = {
@@ -50,35 +50,35 @@ function UserInfo(e) {
     return res;
 };
 
-registerButton.onclick = function () {
-    fetch("/umbraco/api/login/register", {
-        method: 'POST',
-        type: 'POST',
-        headers: {
-            'Accept': 'application/json, plain/text',
-            'Contet-Type': 'application/json; charset=utf-8'
-        },
-    }).then(res => {
-        if (res.status == 200) {
+//registerButton.onclick = function () {
+//    fetch("/umbraco/api/login/register", {
+//        method: 'POST',
+//        type: 'POST',
+//        headers: {
+//            'Accept': 'application/json, plain/text',
+//            'Contet-Type': 'application/json; charset=utf-8'
+//        },
+//    }).then(res => {
+//        if (res.status == 200) {
 
-            res.text().then(e => {
-                Swal.fire({
-                    title: 'Register success',
-                    text: e,
-                    icon: 'success',
-                    confirmButtonText: 'Ok'
-                });
-            })
-        }
-        else {
-            res.json().then(e => {
-                Swal.fire({
-                    title: 'Access denied',
-                    text: e.detail,
-                    icon: 'error',
-                    confirmButtonText: 'Ok'
-                })
-            })
-        }
-    })
-}
+//            res.text().then(e => {
+//                Swal.fire({
+//                    title: 'Register success',
+//                    text: e,
+//                    icon: 'success',
+//                    confirmButtonText: 'Ok'
+//                });
+//            })
+//        }
+//        else {
+//            res.json().then(e => {
+//                Swal.fire({
+//                    title: 'Access denied',
+//                    text: e.detail,
+//                    icon: 'error',
+//                    confirmButtonText: 'Ok'
+//                })
+//            })
+//        }
+//    })
+//}
